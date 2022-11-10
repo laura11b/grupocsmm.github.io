@@ -1,0 +1,356 @@
+* {
+	box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    font-weight: 100;
+    height: 600px;
+    background: -webkit-linear-gradient(to right, #434343bb, #000000bb), url(img/portada.jpg);
+    background: linear-gradient(to right, #434343bb, #000000bb), url(img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+body {
+	font-family: 'Roboto';
+	background: black;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+nav > a:hover{
+    text-decoration: underline;
+
+}
+
+p::first-letter {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+
+
+.wave{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+/*Parte superior acabada*/
+
+.titulo{
+    color: darkred;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: underline;
+}
+
+.contenedor-sobre-sint{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.streaming{
+    width: 1080px;
+    height: 410px;
+    margin-right: 20px;
+}
+
+.contenedor-textos{
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+#id-paragraph{
+    color: royalblue;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/*Formulario*/
+
+.titulo-formulario{
+    color: darkblue;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: underline;
+}
+
+.imagen-sint2{
+    width: 90%;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    height: 550px;
+}
+
+.imagen-sint3{
+    width: 90%;
+    margin-top: 250px;
+    margin-left: 20px;
+    border-radius: 50%;
+    height: 650px;
+    
+}
+
+
+.imagenform{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main {
+	width: 100%;
+	margin: auto;
+}
+
+form{
+    background: white;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+
+.form {
+    width: 100%;
+	display: block;
+    background-color: whitesmoke;
+}
+
+.form_label {
+    color: darkslategray;
+    display: block;
+    margin: 20px;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.form_label2{
+    color: darkslategray;
+    font-size: 16px;
+    margin: 20px;
+	font-weight: 700;
+    display: block;
+}
+
+.form_label3{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.form_label4{
+    margin-left: 20px;
+}
+
+.form_label5{
+    margin: 20px;
+}
+
+.cInternet{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 3px;
+}
+
+
+.form_campo_input {
+    position: relative;
+    margin: 20px;
+}
+
+.form_input {
+	width: 100%;
+    background: none;
+    color: black;
+    font-size: 18px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+    transition: .3s ease all;
+    display: block;
+    width: 100%;
+    border: none;
+    border: 1px solid gray;
+	border-radius: 10px;
+}
+
+.form_input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.form_input_error {
+	font-size: 16px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+	display: none;
+}
+
+.form_input_error_activo {
+	display: block;
+}
+
+.form_validacion_estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+
+.form_mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+    display: none;
+    margin: 20px;
+}
+
+.form_mensaje_activo {
+	display: block;
+}
+
+.form_mensaje p {
+	margin: 20px;
+}
+
+.form_enviar{
+    font-family: 'roboto';
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border: none;
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    font-weight: 600;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.form_enviar:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.form_campo_enviar{
+    margin-top: 40px;
+}
+
+
+.form_mensaje_exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.form_mensaje_exito_activo {
+	display: block;
+}
+
+.firma {
+    color: white;
+    font-size: medium;
+    text-align: center;
+}
+
+/* Marcar recuadro: Bien o mal */
+
+.form_campo_correcto .form_input {
+	border: 3px solid  #1ed12d;
+}
+
+.form_campo_incorrecto .form_label {
+	color: #bb2929;
+	
+}
+
+.form_campo_incorrecto .form_validacion_estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.form_campo_incorrecto .form_input {
+	border: 3px solid #bb2929;
+}
+
+/* PHP */
+
+
+.label_php1 {
+    color: white;
+    font-size: 40px;
+
+}
+
+.label_php2 {
+    color: white;
+    font-size: 24px;
+    
+}
+
+.datos_php {
+    color:black;
+    font-size: 20px;
+    background-color: lightblue;
+    margin-top: 20px;
+}
